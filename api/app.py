@@ -5,7 +5,8 @@ import os
 from flask import Flask, request, jsonify
 
 dirname = os.path.dirname(__file__)
-filename = os.path.join(dirname, './executables/linux.exe')
+filename = os.path.join(dirname, '../executables/linux.exe')
+print(filename)
 
 stockfish = Stockfish(path=filename)
 stockfish.set_depth(20)
